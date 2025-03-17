@@ -4,10 +4,15 @@ plugins {
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.gradle.plugin)
 }
+
+group = "com.verimsolution.tailwind"
+version = "1.0.0"
+
 java {
     sourceCompatibility = JavaVersion.VERSION_17
     targetCompatibility = JavaVersion.VERSION_17
 }
+
 kotlin {
     compilerOptions {
         jvmTarget = org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17
@@ -21,6 +26,8 @@ composeCompiler {
 dependencies {
     implementation(libs.androidx.ui)
     implementation(libs.androidx.compose.foundation)
+    // https://mvnrepository.com/artifact/androidx.compose.material/material-ripple
+    implementation(libs.androidx.material.ripple)
 }
 
 gradlePlugin {
