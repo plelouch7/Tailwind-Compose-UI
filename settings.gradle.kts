@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Tailwind Plugin"
 include(":app")
-include(":Tailwind")
+include(":tailwind")
