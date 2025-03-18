@@ -32,7 +32,7 @@ fun TailwindTheme(
         LocalTextSelectionColors provides selectionColors,
         LocalTypography provides typography,
     ) {
-        ProvideTextStyle(value = typography.bodyLarge, content = content)
+        TailwindProvideTextStyle(value = typography.bodyLarge, content = content)
     }
 }
 

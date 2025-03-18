@@ -51,12 +51,13 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
 
         setContent {
-            TailwindPluginTheme {
-
-//                Surface {
+//            TailwindPluginTheme {
+//
+////                Surface {
                     TailwindText("Accordion")
-//                }
-            }
+////                }
+//            }
+//            Text("Hello World")
         }
     }
 }

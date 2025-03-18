@@ -2,7 +2,7 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.compose.compiler)
-    `maven-publish`
+    id("maven-publish")
 }
 
 android {
@@ -11,7 +11,6 @@ android {
 
     defaultConfig {
         minSdk = 24
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles("consumer-rules.pro")
     }
@@ -25,17 +24,22 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
+
     kotlinOptions {
         jvmTarget = "11"
+    }
+
+    buildFeatures {
+        compose = true
     }
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     testImplementation(libs.junit)
@@ -56,24 +60,17 @@ dependencies {
 group = "com.verimsolution.tailwind"
 version = "0.0.1"
 
-afterEvaluate {
-    publishing {
-        publications {
-            create<MavenPublication>("release") {
-                from(components["release"])
-                groupId = "com.verimsolution"
-                artifactId = "tailwind"
-                version = "0.0.1"
-
-                versionMapping {
-                    usage("java-api") {
-                        fromResolutionOf("runtimeClasspath")
-                    }
-                    usage("java-runtime") {
-                        fromResolutionResult()
-                    }
-                }
-            }
+// Correction de la publication
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            from(components.findByName("release")) // Utilisation de findByName pour éviter l’erreur
+            groupId = "com.verimsolution.tailwind"
+            artifactId = "tailwind"
+            version = "0.0.1"
         }
+    }
+    repositories {
+        mavenLocal()
     }
 }

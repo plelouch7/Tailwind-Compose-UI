@@ -5,9 +5,6 @@
       <SelectionState runConfigName="Tailwind_Plugin.app">
         <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
-      <SelectionState runConfigName="accordionItem_togglesContentVisibility()">
-        <option name="selectionMode" value="DROPDOWN" />
-      </SelectionState>
     </selectionStates>
   </component>
 </project>
