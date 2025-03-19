@@ -4,7 +4,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
-import com.verimsolution.tailwind.Typography
+import com.verimsolution.tailwind_prod.Typography
 
 val typography = Typography(
     displayLarge = TextStyle(

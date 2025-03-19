@@ -1,8 +1,8 @@
 package com.verimsolution.tailwindplugin.ui.themes
 
 import androidx.compose.runtime.Composable
-import com.verimsolution.tailwind.TailwindTheme
-import com.verimsolution.tailwind.lightColorScheme
+import com.verimsolution.tailwind_prod.TailwindTheme
+import com.verimsolution.tailwind_prod.lightColorScheme
 
 @Composable
 fun TailwindPluginTheme(content: @Composable () -> Unit) {

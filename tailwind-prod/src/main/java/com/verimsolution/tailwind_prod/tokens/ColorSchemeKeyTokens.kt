@@ -1,0 +1,85 @@
+package com.verimsolution.tailwind_prod.tokens
+
+internal enum class ColorSchemeKeyTokens {
+    // Couleurs principales (inspirées de Tailwind et Material)
+    Primary,           // Couleur principale (ex. blue-500)
+    Secondary,         // Couleur secondaire (ex. purple-500)
+    Tertiary,          // Couleur tertiaire (ex. green-500)
+    Success,           // Couleur pour succès (ex. green-400)
+    Info,              // Couleur pour info (ex. blue-400)
+    Warning,           // Couleur pour avertissement (ex. yellow-400)
+    Error,             // Couleur pour erreur (ex. red-500)
+
+    // Variantes des couleurs principales
+    PrimaryLight,      // Variante claire de Primary (ex. blue-300)
+    PrimaryDark,       // Variante sombre de Primary (ex. blue-700)
+    SecondaryLight,    // Variante claire de Secondary (ex. purple-300)
+    SecondaryDark,     // Variante sombre de Secondary (ex. purple-700)
+    TertiaryLight,     // Variante claire de Tertiary (ex. green-300)
+    TertiaryDark,      // Variante sombre de Tertiary (ex. green-700)
+    InversePrimary,    // Couleur inversée de Primary (ex. blue-200)
+
+    // Couleurs "On" (pour le contraste sur les principales)
+    OnPrimary,         // Texte ou icônes sur Primary (ex. white)
+    OnSecondary,       // Texte ou icônes sur Secondary (ex. white)
+    OnTertiary,        // Texte ou icônes sur Tertiary (ex. white)
+    OnSuccess,         // Texte ou icônes sur Success (ex. gray-800)
+    OnInfo,            // Texte ou icônes sur Info (ex. white)
+    OnWarning,         // Texte ou icônes sur Warning (ex. gray-900)
+    OnError,           // Texte ou icônes sur Error (ex. white)
+
+    // Conteneurs (pour fonds secondaires ou cartes)
+    PrimaryContainer,  // Fond associé à Primary (ex. blue-100)
+    SecondaryContainer,// Fond associé à Secondary (ex. purple-100)
+    TertiaryContainer, // Fond associé à Tertiary (ex. green-100)
+    SuccessContainer,  // Fond pour Success (ex. green-50)
+    InfoContainer,     // Fond pour Info (ex. blue-50)
+    WarningContainer,  // Fond pour Warning (ex. yellow-50)
+    ErrorContainer,    // Fond pour Error (ex. red-50)
+
+    // Couleurs "On" pour conteneurs
+    OnPrimaryContainer,   // Texte ou icônes sur PrimaryContainer (ex. blue-900)
+    OnSecondaryContainer, // Texte ou icônes sur SecondaryContainer (ex. purple-900)
+    OnTertiaryContainer,  // Texte ou icônes sur TertiaryContainer (ex. green-900)
+    OnSuccessContainer,   // Texte ou icônes sur SuccessContainer (ex. green-900)
+    OnInfoContainer,      // Texte ou icônes sur InfoContainer (ex. blue-900)
+    OnWarningContainer,   // Texte ou icônes sur WarningContainer (ex. yellow-900)
+    OnErrorContainer,     // Texte ou icônes sur ErrorContainer (ex. red-900)
+
+    // Surfaces (fonds généraux)
+    Background,        // Fond principal (ex. gray-50 en clair, neutral-900 en sombre)
+    Surface,           // Surface principale (ex. white en clair, neutral-800 en sombre)
+    SurfaceLight,      // Surface claire (ex. gray-100)
+    SurfaceDark,       // Surface sombre (ex. gray-800)
+    SurfaceBright,     // Surface lumineuse (ex. gray-100 en clair, neutral-700 en sombre)
+    SurfaceDim,        // Surface atténuée (ex. gray-200 en clair, neutral-900 en sombre)
+    SurfaceVariant,    // Variante de surface (ex. slate-200 en clair, slate-800 en sombre)
+    SurfaceContainer,  // Conteneur de surface (ex. gray-100 en clair, neutral-600 en sombre)
+    SurfaceContainerHigh,    // Conteneur de surface élevé (ex. gray-200 en clair, neutral-500 en sombre)
+    SurfaceContainerHighest, // Conteneur de surface très élevé (ex. gray-300 en clair, neutral-400 en sombre)
+    SurfaceContainerLow,     // Conteneur de surface bas (ex. gray-50 en clair, neutral-700 en sombre)
+    SurfaceContainerLowest,  // Conteneur de surface minimal (ex. white en clair, neutral-800 en sombre)
+    InverseSurface,    // Surface inversée (ex. gray-800 en clair, gray-50 en sombre)
+
+    // Couleurs "On" pour surfaces
+    OnBackground,      // Texte/icônes sur Background (ex. gray-800 en clair, neutral-100 en sombre)
+    OnSurface,         // Texte/icônes sur Surface (ex. gray-800 en clair, neutral-100 en sombre)
+    OnSurfaceLight,    // Texte/icônes sur SurfaceLight (ex. gray-800)
+    OnSurfaceDark,     // Texte/icônes sur SurfaceDark (ex. gray-100)
+    OnSurfaceVariant,  // Texte/icônes sur SurfaceVariant (ex. slate-600 en clair, slate-300 en sombre)
+    InverseOnSurface,  // Texte/icônes sur InverseSurface (ex. gray-50 en clair, gray-900 en sombre)
+
+    // Contours et bordures (inspiré de Tailwind "border")
+    Outline,           // Bordure principale (ex. gray-400 en clair, slate-500 en sombre)
+    OutlineLight,      // Bordure claire (ex. gray-200 en clair, slate-400 en sombre)
+    OutlineDark,       // Bordure sombre (ex. gray-600 en clair, slate-600 en sombre)
+    OutlineVariant,    // Variante de bordure (ex. gray-300 en clair, slate-300 en sombre)
+
+    // Utilitaires divers
+    Shadow,            // Couleur pour ombres (ex. gray-500 avec alpha en clair, neutral-900 avec alpha en sombre)
+    Scrim,             // Couleur pour overlays (ex. gray-900 avec alpha)
+    Text,              // Couleur de texte par défaut (ex. gray-800 en clair, neutral-100 en sombre)
+    TextSecondary,     // Couleur de texte secondaire (ex. gray-500 en clair, neutral-300 en sombre)
+    SurfaceTint,       // Teinte appliquée aux surfaces (souvent Primary)
+    Inverse            // Couleur inversée pour contraste général (ex. white ou black selon le thème)
+}
