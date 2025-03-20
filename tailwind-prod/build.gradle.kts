@@ -31,6 +31,12 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
 }
 
 dependencies {
@@ -47,3 +53,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+// Informations du projet
+group = "com.verimsolution.tailwind"
+version = "0.0.1"
