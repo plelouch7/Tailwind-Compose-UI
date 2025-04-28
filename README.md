@@ -1,50 +1,48 @@
-# Tailwind Compose UI
+Tailwind Compose UI
 
-**Tailwind Compose UI** is a Jetpack Compose library that brings the power of Tailwind CSS-inspired components to Android development. It provides a collection of reusable, customizable UI components to help you build modern, responsive Android applications with ease.
+Tailwind Compose UI is a Jetpack Compose library that brings Tailwind CSS–inspired components to Android development. It offers a collection of reusable, customizable UI elements to help you build modern, responsive Android applications with ease.
 
-## Features
+Features
 
-- **Tailwind-inspired components**: Build UIs with familiar Tailwind CSS-like styling.
-- **Jetpack Compose integration**: Fully compatible with Compose, Android's modern UI toolkit.
-- **Customizable**: Easily tweak components to match your app's design.
-- **Lightweight**: Minimal dependencies to keep your app lean.
+Tailwind-like styling: Quickly style your components using familiar utility-based classes.
 
-## Installation
+Jetpack Compose integration: Seamlessly compatible with Android’s modern UI toolkit.
 
-To use **Tailwind Compose UI** in your Android project, follow these steps:
+Highly customizable: Tweak component properties to match your design requirements.
 
-### Step 1: Add the JitPack repository
+Lightweight: Minimal dependencies ensure a lean app footprint.
 
-Add the JitPack repository to your project's `settings.gradle` (or `build.gradle` at the project level):
+Installation
 
-```kotlin
+Add the library to your Android project by following these steps:
+
+1. Add the JitPack repository
+
+In your project-level settings.gradle (or build.gradle), include:
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
         google()
         mavenCentral()
-        maven { url "https://jitpack.io" }
+        maven { url = "https://jitpack.io" }
     }
 }
-```
 
-### Step 2: Add the dependency
+2. Add the Tailwind Compose UI dependency
 
-Add the library dependency to your module's `build.gradle`:
+In your module-level build.gradle:
 
-```kotlin
 dependencies {
-    implementation "com.github.plelouch7:tailwind-prod:0.0.1"
+    implementation("com.github.plelouch7:Tailwind-Compose-UI:0.0.1")
 }
-```
 
-Sync your project to fetch the library.
+Sync the project to download the library.
 
-## Usage
+Usage
 
-Here’s an example of how to use a component from **Tailwind Compose UI** in your Jetpack Compose application:
+Use any Tailwind Compose UI component in your Composable functions. For example, to add a styled button:
 
-```kotlin
 import androidx.compose.runtime.Composable
 import com.verimsolution.tailwind_prod.TailwindButton
 
@@ -56,58 +54,63 @@ fun MyScreen() {
         modifier = Modifier.padding(16.dp)
     )
 }
-```
 
-### Available Components
+Available Components
 
-- `TailwindButton`: A customizable button with Tailwind-inspired styles.
-- `TailwindCard`: A card component for displaying content.
-- *Add more components here based on your library's offerings*
+TailwindButton — a configurable button with utility-based styling.
 
-For detailed documentation and additional examples, check the [API Reference](https://github.com/plelouch7/Tailwind-Compose-UI/wiki) (coming soon).
+TailwindCard — a card layout component for grouping content.
 
-## Requirements
+More components coming soon!
 
-- **Min SDK**: 24
-- **Compile SDK**: 35
-- **Java Version**: 17
-- **Jetpack Compose**: Compatible with Compose 1.x
+Refer to the API Reference for full documentation and examples.
 
-## Building from Source
+Requirements
 
-To build the library from source:
+Minimum SDK: 24
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/plelouch7/Tailwind-Compose-UI.git
-   ```
+Compile SDK: 35
+
+Java: 17 or higher
+
+Jetpack Compose: 1.x
+
+Building from Source
+
+Clone the repository:
+
+
+
+git clone https://github.com/plelouch7/Tailwind-Compose-UI.git
+
 2. Open the project in Android Studio.
-3. Build the project using:
+3. Run:
    ```bash
-   ./gradlew build
-   ```
+./gradlew build
 
-## Contributing
+Contributing
 
-Contributions are welcome! Please follow these steps:
+Contributions are welcome! To contribute:
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature`).
-3. Make your changes and commit (`git commit -m "Add your feature"`).
-4. Push to your branch (`git push origin feature/your-feature`).
-5. Open a Pull Request.
+Fork this repository.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for more details.
+Create a new branch: git checkout -b feature/your-feature.
 
-## License
+Commit your changes: git commit -m "Add your feature".
 
-This project is licensed under the Apache License 2.0. See the [LICENSE](LICENSE) file for details.
+Push to your branch: git push origin feature/your-feature.
 
-## Contact
+Open a pull request.
 
-For questions or feedback, feel free to open an issue or contact the maintainer at [your.email@example.com](mailto\:your.email@example.com).
+See CONTRIBUTING.md for more details.
 
----
+License
+
+This project is licensed under the Apache License 2.0. See LICENSE for details.
+
+Contact
+
+For questions or feedback, open an issue or reach out at your.email@example.com.
 
 Built with ❤️ using Jetpack Compose.
 
