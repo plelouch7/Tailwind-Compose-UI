@@ -34,7 +34,7 @@ Add the library dependency to your module's `build.gradle`:
 
 ```kotlin
 dependencies {
-    implementation "com.github.plelouch7:Tailwind-Compose-UI:0.0.1"
+    implementation "com.github.plelouch7:tailwind-prod:0.0.1"
 }
 ```
 
