@@ -25,11 +25,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = "17"
     }
     publishing {
         singleVariant("release") {
@@ -53,6 +53,21 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }
+
 // Informations du projet
-group = "com.verimsolution.tailwind"
+group = "com.github.plelouch7"
 version = "0.0.1"
+
+// Configuration de la publication pour JitPack
+afterEvaluate {
+    publishing {
+        publications {
+            register<MavenPublication>("release") {
+                from(components["release"])
+                groupId = "com.github.plelouch7"
+                artifactId = "tailwind-prod"
+                version = "0.0.1"
+            }
+        }
+    }
+}
