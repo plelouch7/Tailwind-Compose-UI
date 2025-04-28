@@ -23,7 +23,6 @@ import androidx.compose.ui.unit.sp
 import com.verimsolution.tailwind_prod.TailwindScaffold
 import com.verimsolution.tailwind_prod.TailwindText
 import com.verimsolution.tailwind_prod.TailwindTopAppBar
-import com.verimsolution.tailwind_prod.pinnedScrollBehavior
 import com.verimsolution.tailwindplugin.ui.themes.TailwindPluginTheme
 
 class MainActivity : ComponentActivity() {
@@ -97,7 +96,6 @@ fun TailwindTopBar(
                 }
             },
             actions = { },
-            scrollBehavior = pinnedScrollBehavior()
         )
     }
 }
